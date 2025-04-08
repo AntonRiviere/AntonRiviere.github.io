@@ -1,15 +1,195 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="text-white bg-black">toto</div>
-    </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AntonR - Développeur Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        primary: '#334155',
+                        secondary: '#64748b',
+                        accent: '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins text-gray-800 bg-gray-50">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-semibold text-primary">Anton Riviere - Portfolio</h1>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#accueil" class="text-gray-600 hover:text-accent transition-colors">Accueil</a></li>
+                <li><a href="#projets" class="text-gray-600 hover:text-accent transition-colors">Projets</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-accent transition-colors">Qui je suis ?</a></li>
+            </ul>
+            <div class="md:hidden flex flex-col space-y-1 cursor-pointer">
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="pt-28 pb-16 md:pt-36 md:pb-24 container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Bonjour, je suis <span class="text-accent">Anton Riviere</span></h1>
+                    <h2 class="text-2xl md:text-3xl text-secondary font-medium mb-6">Développeur Web Full-Stack</h2>
+                    <p class="text-lg mb-8">Je conçois et développe des sites web modernes et interactifs.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projets" class="px-6 py-3 bg-accent text-white rounded-md hover:bg-blue-700 transition-colors">Voir mes projets</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="images/profile.jpg" alt="Ma photo de profil" class="rounded-full w-64 h-64 object-cover shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-primary">Mes Compétences</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                        <i class="fas fa-code text-4xl text-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Développement Front-End</h3>
+                        <p class="text-gray-600">HTML5, CSS3, JavaScript, React, Vue.js, Twig</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                        <i class="fas fa-server text-4xl text-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Développement Back-End</h3>
+                        <p class="text-gray-600">PHP, Python, MySQL, MongoDB, Symfony</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                        <i class="fas fa-paint-brush text-4xl text-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Design UI/UX</h3>
+                        <p class="text-gray-600">Figma, Responsive Design, TailwindCss</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                        <i class="fas fa-tools text-4xl text-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Outils & Méthodes</h3>
+                        <p class="text-gray-600">Git, Agile, CI/CD, Docker, Asana</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="py-16 container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-primary">Mes Projets Récents</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/projet1.jpg" alt="Projet 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Application E-Commerce</h3>
+                        <p class="text-gray-600 mb-4">Une plateforme de vente en ligne complète avec panier d'achat, paiement et gestion des commandes.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">MongoDB</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-blue-700 transition-colors" target="_blank">Voir le site</a>
+                            <a href="https://github.com/username/projet1" class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors" target="_blank">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/projet2.jpg" alt="Projet 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Dashboard Analytique</h3>
+                        <p class="text-gray-600 mb-4">Interface d'administration avec visualisation de données en temps réel et rapports personnalisés.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">D3.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Express</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-blue-700 transition-colors" target="_blank">Voir le site</a>
+                            <a href="https://github.com/username/projet2" class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors" target="_blank">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/projet3.jpg" alt="Projet 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Application Mobile Fitness</h3>
+                        <p class="text-gray-600 mb-4">Application de suivi d'exercices et de nutrition avec synchronisation cloud et statistiques personnalisées.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">React Native</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Redux</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-blue-700 transition-colors" target="_blank">Démo vidéo</a>
+                            <a href="https://github.com/username/projet3" class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors" target="_blank">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="px-6 py-3 bg-accent text-white rounded-md hover:bg-blue-700 transition-colors">Voir tous les projets</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xl font-semibold mb-2">Mon Portfolio</h2>
+                    <p class="text-gray-400">&copy; 2025 - Tous droits réservés</p>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#accueil" class="text-gray-400 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="#projets" class="text-gray-400 hover:text-white transition-colors">Projets</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Qui suis-je ?</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mentions légales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Politique de confidentialité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">CGU</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
