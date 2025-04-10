@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui Suis-Je - AntonR - Développeur Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        primary: '#eb9d0e',
+                        secondary: '#a1700e',
+                        accent: '#eb9d0e'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins text-gray-800 bg-gray-50">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-semibold text-primary">Anton Riviere - Portfolio</h1>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-gray-600 hover:text-accent transition-colors">Accueil</a></li>
+                <li><a href="projets.html" class="text-gray-600 hover:text-accent transition-colors">Projets</a></li>
+                <li><a href="competences.html" class="text-gray-600 hover:text-accent transition-colors">Mes
+                        compétences</a></li>
+                <li><a href="about.html" class="text-accent font-medium transition-colors">Qui je suis ?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="pt-28 pb-16 md:pt-36 md:pb-24 container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/3">
+                    <div class="sticky top-28">
+                        <img src="images/anton_jungle.jpg" alt="Anton Riviere"
+                            class="w-full max-w-sm mx-auto rounded-lg shadow-lg">
+                        <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+                            <h3 class="text-lg font-semibold mb-4 text-accent">Contact</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-map-marker-alt text-accent"></i>
+                                    <span>27 place des bons enfants, 01000 Bourg-en-Bresse</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-envelope text-accent"></i>
+                                    <a href="mailto:riviere.anton@gmail.com"
+                                        class="hover:text-accent transition-colors">riviere.anton@gmail.com</a>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-phone text-accent"></i>
+                                    <span>+33 6 52 30 08 92</span>
+                                </li>
+                            </ul>
+
+                            <h3 class="text-lg font-semibold mt-6 mb-4 text-accent">Réseaux Sociaux</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/AntonRivier" target="_blank"
+                                    class="text-gray-600 hover:text-accent transition-colors">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/anton-riviere-457186221/?trk=public_profile_browsemap&originalSubdomain=fr" target="_blank"
+                                    class="text-gray-600 hover:text-accent transition-colors">
+                                    <i class="fab fa-linkedin text-2xl"></i>
+                                </a>
+                            </div>
+
+                            <div class="mt-6">
+                                <a href="#"
+                                    class="block text-center px-4 py-2 bg-accent text-white rounded-md hover:bg-yellow-700 transition-colors">Télécharger
+                                    mon CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/3">
+                    <h1 class="text-4xl font-bold mb-6 text-primary">Qui suis-je ?</h1>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h2 class="text-2xl font-semibold mb-4">À propos de moi</h2>
+                        <p class="text-lg mb-4">
+                            Je suis Anton Riviere, alternant en informatique actuellement en BUT Informatique à l'IUT de
+                            Bourg-en-Bresse. Passionné par le développement web, j'ai eu l'occasion de participer à de
+                            nombreux projets académiques, notamment en React, Java, et avec des ESP-32.
+                        </p>
+                        <p class="text-lg mb-4">
+                            J'ai effectué un stage à l'étranger en Malaisie (UTP) et j'aime apprendre en permanence,
+                            relever des défis techniques et travailler en équipe.
+                        </p>
+                        <p class="text-lg">
+                            En plus du code, je suis fan de cinéma, de jeux vidéo et de montagnes russes.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h2 class="text-2xl font-semibold mb-4">Mon parcours professionnel</h2>
+                        <div class="space-y-8">
+                            <div class="flex">
+                                <div class="mr-4 flex flex-col items-center">
+                                    <div
+                                        class="rounded-full h-10 w-10 bg-accent flex items-center justify-center text-white">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="h-full w-0.5 bg-gray-300 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-medium">Alternant Développeur Web</h3>
+                                    <p class="text-accent mb-1">Appinov, Montrevel-en-Bresse -Septembre 2024 à maintenant</p>
+                                    <p class="text-gray-600">
+                                        Développement web, correction de bugs sur un ERP et conception de maquettes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 flex flex-col items-center">
+                                    <div
+                                        class="rounded-full h-10 w-10 bg-accent flex items-center justify-center text-white">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="h-full w-0.5 bg-gray-300 mt-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-medium">Hôte de caisse</h3>
+                                    <p class="text-accent mb-1">Leclerc, Vindry-sur-Turdine - Dec 2021 à Mai 2024</p>
+                                    <p class="text-gray-600">
+                                        Gestion client, encaissement, remise en rayon et rangement. Travail en équipe,
+                                        régularité et rigueur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="mr-4 flex flex-col items-center">
+                                    <div
+                                        class="rounded-full h-10 w-10 bg-accent flex items-center justify-center text-white">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-medium">BUT Informatique</h3>
+                                    <p class="text-accent mb-1">IUT Lyon 1 - 2022 à 2025</p>
+                                    <p class="text-gray-600">Spécialisation en développement full-stack, projets en
+                                        React, Java, Arduino, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h2 class="text-2xl font-semibold mb-6">Ce qui me motive</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex items-start gap-4">
+                                <div class="text-accent text-3xl">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium mb-2">Innovation</h3>
+                                    <p class="text-gray-600">Toujours curieux de tester de nouvelles technologies et
+                                        approches.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="text-accent text-3xl">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium mb-2">Travail d'équipe</h3>
+                                    <p class="text-gray-600">J'aime la cohésion, la communication et la synchronisation
+                                        dans les projets collectifs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-semibold mb-6">En dehors du code</h2>
+                        <div class="flex flex-wrap gap-6">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-film text-accent text-xl"></i>
+                                <span>Cinéma</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-train text-accent text-xl"></i>
+                                <span>Montagnes russes</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-gamepad text-accent text-xl"></i>
+                                <span>Jeux vidéo</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-lg text-gray-600">
+                                Mes passions me permettent de m'évader et stimulent ma créativité dans le développement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">Anton Riviere - Portfolio</h2>
+                    <p class="text-gray-400">&copy; 2025 - Tous droits réservés</p>
+                </div>
+                <div>
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
+                        <li><a href="projets.html" class="text-gray-400 hover:text-white">Projets</a></li>
+                        <li><a href="competences.html" class="text-gray-400 hover:text-white">Mes compétences</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Qui suis-je ?</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mentions légales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Politique de confidentialité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">CGU</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Réseaux sociaux</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/AntonRiviere" class="text-gray-400 hover:text-white" target="_blank">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anton-riviere-457186221/?trk=public_profile_browsemap&originalSubdomain=fr" class="text-gray-400 hover:text-white" target="_blank">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

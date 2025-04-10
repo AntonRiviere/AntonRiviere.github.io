@@ -15,9 +15,9 @@
                         'poppins': ['Poppins', 'sans-serif']
                     },
                     colors: {
-                        primary: '#334155',
-                        secondary: '#64748b',
-                        accent: '#3b82f6'
+                        primary: '#eb9d0e',
+                        secondary: '#a1700e',
+                        accent: '#eb9d0e'
                     }
                 }
             }
@@ -32,10 +32,11 @@
             </div>
             <ul class="hidden md:flex space-x-8">
                 <li><a href="#accueil" class="text-gray-600 hover:text-accent transition-colors">Accueil</a></li>
-                <li><a href="#projets" class="text-gray-600 hover:text-accent transition-colors">Projets</a></li>
-                <li><a href="#contact" class="text-gray-600 hover:text-accent transition-colors">Qui je suis ?</a></li>
+                <li><a href="projets.html" class="text-gray-600 hover:text-accent transition-colors">Projets</a></li>
+                <li><a href="competences.html" class="text-gray-600 hover:text-accent transition-colors">Mes compétences</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-accent transition-colors">Qui je suis ?</a></li>
             </ul>
-            <div class="md:hidden flex flex-col space-y-1 cursor-pointer">
+            <div class="md:hidden flex flex-col space-y-1 cursor-pointer" id="mobile-menu-button">
                 <div class="w-6 h-0.5 bg-gray-600"></div>
                 <div class="w-6 h-0.5 bg-gray-600"></div>
                 <div class="w-6 h-0.5 bg-gray-600"></div>
@@ -51,11 +52,11 @@
                     <h2 class="text-2xl md:text-3xl text-secondary font-medium mb-6">Développeur Web Full-Stack</h2>
                     <p class="text-lg mb-8">Je conçois et développe des sites web modernes et interactifs.</p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#projets" class="px-6 py-3 bg-accent text-white rounded-md hover:bg-blue-700 transition-colors">Voir mes projets</a>
+                        <a href="projets.html" class="px-6 py-3 bg-accent text-white rounded-md hover:bg-yellow-700 transition-colors">Voir mes projets</a>
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
-                    <img src="images/profile.jpg" alt="Ma photo de profil" class="rounded-full w-64 h-64 object-cover shadow-lg">
+                    <img src="images/photo_muraille.jpg" alt="Ma photo de profil" class="rounded-full w-64 h-64 object-cover shadow-lg">
                 </div>
             </div>
         </section>
@@ -94,18 +95,18 @@
                 <!-- Projet 1 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/projet1.jpg" alt="Projet 1" class="w-full h-full object-cover">
+                        <img src="images/chess.png" alt="Projet 1" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Application E-Commerce</h3>
-                        <p class="text-gray-600 mb-4">Une plateforme de vente en ligne complète avec panier d'achat, paiement et gestion des commandes.</p>
+                        <h3 class="text-xl font-semibold mb-2">VueEchecs</h3>
+                        <p class="text-gray-600 mb-4">Un site permettant de jouer une partie d'échec avec de nombreuses fonctionnalités. Fait en VueJs et TypeScript</p>
                         <div class="mb-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">React</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Node.js</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">MongoDB</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TypeScript</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailwindCss</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-blue-700 transition-colors" target="_blank">Voir le site</a>
+                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors" target="_blank">Voir les captures d'écran</a>
                             <a href="https://github.com/username/projet1" class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors" target="_blank">
                                 <i class="fab fa-github"></i> Code source
                             </a>
@@ -116,20 +117,20 @@
                 <!-- Projet 2 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/projet2.jpg" alt="Projet 2" class="w-full h-full object-cover">
+                        <img src="images/coaster.png" alt="Projet 2" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Dashboard Analytique</h3>
-                        <p class="text-gray-600 mb-4">Interface d'administration avec visualisation de données en temps réel et rapports personnalisés.</p>
+                        <h3 class="text-xl font-semibold mb-2">Frissons & Virages</h3>
+                        <p class="text-gray-600 mb-4">Un site sur les parcs d'attractions et les montagnes russes avec une carte mondiale.</p>
                         <div class="mb-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Vue.js</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">D3.js</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Express</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Twig</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Symfony</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailwindCSS</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-blue-700 transition-colors" target="_blank">Voir le site</a>
+                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors" target="_blank">Voir les captures d'écrans</a>
                             <a href="https://github.com/username/projet2" class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors" target="_blank">
-                                <i class="fab fa-github"></i> Code source
+                                <i class="fab fa-github"></i> Voir lien GitHub
                             </a>
                         </div>
                     </div>
@@ -138,27 +139,26 @@
                 <!-- Projet 3 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/projet3.jpg" alt="Projet 3" class="w-full h-full object-cover">
+                        <img src="images/groupepi.png" alt="Projet 3" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Application Mobile Fitness</h3>
-                        <p class="text-gray-600 mb-4">Application de suivi d'exercices et de nutrition avec synchronisation cloud et statistiques personnalisées.</p>
+                        <h3 class="text-xl font-semibold mb-2">Site Groupe PI</h3>
+                        <p class="text-gray-600 mb-4">Site vitrine du Groupe PI Install - Un groupe de pose de chambres froides </p>
                         <div class="mb-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">React Native</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Firebase</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Redux</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Symfony</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Sulu</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailWindCSS</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-blue-700 transition-colors" target="_blank">Démo vidéo</a>
-                            <a href="https://github.com/username/projet3" class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors" target="_blank">
-                                <i class="fab fa-github"></i> Code source
-                            </a>
+                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors" target="_blank">Captures d'écrans</a>
+                            <a href="#" class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
+                                target="_blank">Lien vers le site web</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-12">
-                <a href="#" class="px-6 py-3 bg-accent text-white rounded-md hover:bg-blue-700 transition-colors">Voir tous les projets</a>
+                <a href="#" class="px-6 py-3 bg-accent text-white rounded-md hover:bg-yellow-700 transition-colors">Voir tous les projets</a>
             </div>
         </section>
     </main>
@@ -167,15 +167,15 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="md:col-span-1">
-                    <h2 class="text-xl font-semibold mb-2">Mon Portfolio</h2>
+                    <h2 class="text-xl font-semibold mb-2">Anton Riviere - Portfolio</h2>
                     <p class="text-gray-400">&copy; 2025 - Tous droits réservés</p>
                 </div>
                 <div class="md:col-span-1">
                     <h3 class="text-md font-semibold mb-3 text-gray-300">Navigation</h3>
                     <ul class="space-y-2">
                         <li><a href="#accueil" class="text-gray-400 hover:text-white transition-colors">Accueil</a></li>
-                        <li><a href="#projets" class="text-gray-400 hover:text-white transition-colors">Projets</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Qui suis-je ?</a></li>
+                        <li><a href="projets.html" class="text-gray-400 hover:text-white transition-colors">Projets</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Qui suis-je ?</a></li>
                     </ul>
                 </div>
                 <div class="md:col-span-1">

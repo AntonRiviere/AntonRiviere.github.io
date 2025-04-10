@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences - AntonR - Développeur Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        primary: '#eb9d0e',
+                        secondary: '#a1700e',
+                        accent: '#eb9d0e'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins text-gray-800 bg-gray-50">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-semibold text-primary">Anton Riviere - Portfolio</h1>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-gray-600 hover:text-accent transition-colors">Accueil</a></li>
+                <li><a href="projets.html" class="text-gray-600 hover:text-accent transition-colors">Projets</a></li>
+                <li><a href="competences.html" class="text-accent font-medium transition-colors">Mes compétences</a>
+                </li>
+                <li><a href="about.html" class="text-gray-600 hover:text-accent transition-colors">Qui je suis ?</a>
+                </li>
+            </ul>
+            <div class="md:hidden flex flex-col space-y-1 cursor-pointer" id="mobile-menu-button">
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-28 pb-16 md:pt-36 md:pb-24 container mx-auto px-6">
+            <h1 class="text-4xl font-bold text-center mb-12 text-primary">Mes Compétences</h1>
+
+            <!-- Section Développement Front-End -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold text-secondary mb-8 flex items-center">
+                    <i class="fas fa-code text-accent mr-3"></i>
+                    Développement Front-End
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-html5 text-4xl text-orange-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">HTML5</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Structure sémantique, accessibilité, formulaires complexes</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-css3-alt text-4xl text-blue-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">CSS3</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Animations, Grid, Flexbox, Media Queries</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-js text-4xl text-yellow-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">JavaScript</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">ES6+, DOM Manipulation</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-react text-4xl text-blue-400 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">React</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Interfaces utilisateur, TypeScript, Liaison Backend/Frontend</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-java text-4xl text-red-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Java</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Interface Processing, Développement de jeux, POO</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-window-restore text-4xl text-green-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">QT Creator</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Interfaces graphiques, Applications desktop</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Développement Back-End -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold text-secondary mb-8 flex items-center">
+                    <i class="fas fa-server text-accent mr-3"></i>
+                    Développement Back-End
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-php text-4xl text-purple-600 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">PHP</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Base de données, Web dynamique</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-database text-4xl text-blue-700 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">SQL</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Conception de BDD, Requêtes, Gestion de données</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-code text-4xl text-blue-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">C++</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Programmation orientée objet, Algorithms</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Électronique & IOT -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold text-secondary mb-8 flex items-center">
+                    <i class="fas fa-microchip text-accent mr-3"></i>
+                    Électronique & IOT
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-arduino text-4xl text-teal-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Arduino</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Programmation, Électronique, Prototypage</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-wifi text-4xl text-blue-600 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">ESP-32</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Configuration réseau, Connexion IoT, Signalétique</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-network-wired text-4xl text-gray-700 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Réseaux</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Configuration de routeurs, Liaisons physiques, Réseau local</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Design & Création -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold text-secondary mb-8 flex items-center">
+                    <i class="fas fa-paint-brush text-accent mr-3"></i>
+                    Design & Création
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-pencil-alt text-4xl text-pink-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Inkscape</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Design vectoriel, Création graphique</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-mobile-alt text-4xl text-blue-600 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Interfaces Utilisateur</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Design UI, Expérience utilisateur, Prototypage</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-gamepad text-4xl text-purple-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Processing</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Interfaces graphiques, Animation, Jeux 2D</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Outils & Méthodes -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold text-secondary mb-8 flex items-center">
+                    <i class="fas fa-tools text-accent mr-3"></i>
+                    Outils & Méthodes
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-users text-4xl text-blue-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Travail d'équipe</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Coordination, Direction d'équipe, Collaboration</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-tasks text-4xl text-green-600 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Gestion de projets</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">SAE, Projets universitaires, Organisation</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-file-alt text-4xl text-blue-600 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Suite Office</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Word, Excel, PowerPoint, Documentation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Formation -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold text-secondary mb-8 flex items-center">
+                    <i class="fas fa-graduation-cap text-accent mr-3"></i>
+                    Formation
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-university text-4xl text-accent mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">BUT Informatique</h3>
+                                <p class="text-gray-500">IUT Lyon 1, Bourg-En-Bresse - 2022-2025</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Actuellement en alternance, développement web & logiciel</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-flask text-4xl text-blue-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Licence 1 Physique-Chimie</h3>
+                                <p class="text-gray-500">Université Claude Bernard Lyon 1 - 2020-2022</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Bases scientifiques et initiation à la programmation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Langues -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold text-secondary mb-8 flex items-center">
+                    <i class="fas fa-language text-accent mr-3"></i>
+                    Langues
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-flag text-4xl text-blue-700 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Français</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Langue maternelle</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-flag text-4xl text-red-500 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Anglais</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Courant, Score TOEIC (985/990), expérience internationale (Malaisie)</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-flag text-4xl text-green-600 mr-4"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold">Italien</h3>
+                                <div class="mt-2 bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Niveau intermédiaire</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Soft Skills -->
+            <div>
+                <h2 class="text-3xl font-semibold text-secondary mb-8 flex items-center">
+                    <i class="fas fa-brain text-accent mr-3"></i>
+                    Soft Skills
+                </h2>
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Adaptabilité</h4>
+                                <p class="text-gray-600 text-sm">Nouveaux environnements de travail</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Concentration</h4>
+                                <p class="text-gray-600 text-sm">Travail sous pression</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Direction d'équipe</h4>
+                                <p class="text-gray-600 text-sm">Coordination et synchronisation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Créativité</h4>
+                                <p class="text-gray-600 text-sm">Recherche d'idées et concepts</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Rigueur</h4>
+                                <p class="text-gray-600 text-sm">Sérieux et assiduité</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Endurance</h4>
+                                <p class="text-gray-600 text-sm">Discipline et concentration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xl font-semibold mb-2">Anton Riviere - Portfolio</h2>
+                    <p class="text-gray-400">&copy; 2025 - Tous droits réservés</p>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a>
+                        </li>
+                        <li><a href="projets.html" class="text-gray-400 hover:text-white transition-colors">Projets</a>
+                        </li>
+                        <li><a href="competences.html" class="text-gray-400 hover:text-white transition-colors">Mes
+                                compétences</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Qui suis-je
+                                ?</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mentions légales</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Politique de
+                                confidentialité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">CGU</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                            <a href="mailto:riviere.anton@gmail.com"
+                                class="text-gray-400 hover:text-white transition-colors">riviere.anton@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-gray-400"></i>
+                            <a href="tel:+33652300892" class="text-gray-400 hover:text-white transition-colors">06 52 30
+                                08 92</a>
+                        </li>
+                        <li class="flex items-center">

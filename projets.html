@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - AntonR - Développeur Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        primary: '#eb9d0e',
+                        secondary: '#a1700e',
+                        accent: '#eb9d0e'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins text-gray-800 bg-gray-50">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-semibold text-primary">Anton Riviere - Portfolio</h1>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-gray-600 hover:text-accent transition-colors">Accueil</a></li>
+                <li><a href="projets.html" class="text-accent font-medium transition-colors">Projets</a></li>
+                <li><a href="competences.html" class="text-gray-600 hover:text-accent transition-colors">Mes
+                        compétences</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-accent transition-colors">Qui je suis ?</a>
+                </li>
+            </ul>
+            <div class="md:hidden flex flex-col space-y-1 cursor-pointer" id="mobile-menu-button">
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-28 pb-12 md:pt-36 md:pb-16 container mx-auto px-6">
+            <h1 class="text-4xl font-bold text-center mb-3">Mes Projets</h1>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Découvrez les projets sur lesquels j'ai
+                travaillé et les technologies que j'ai utilisées pour les réaliser.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/projet1.jpg" alt="Projet 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">VueEchecs</h3>
+                        <p class="text-gray-600 mb-4">Un site permettant de jouer aux échecs en temps réel avec de nombreuses fonctionnalités avancées. Développé en Vue.js et TypeScript, ce projet inclut un moteur d'échecs complet, la validation des mouvements, la notation algébrique, la possibilité de rejouer des parties célèbres, et une interface utilisateur intuitive et responsive. J'ai mis l'accent sur les performances et l'accessibilité.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TypeScript</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailwindCss</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
+                                target="_blank">Voir les captures d'écran</a>
+                            <a href="https://github.com/username/projet1"
+                                class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
+                                target="_blank">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/projet2.jpg" alt="Projet 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Frissons & Virages</h3>
+                        <p class="text-gray-600 mb-4">Un site communautaire dédié aux parcs d'attractions et aux montagnes russes avec une carte mondiale interactive. Ce projet Symfony implémente un système complet de gestion utilisateurs, des fiches détaillées pour chaque attraction, des avis et notations, ainsi qu'une API pour intégrer les données cartographiques. J'ai particulièrement travaillé sur l'optimisation des performances de la base de données et la mise en place d'une interface responsive avec TailwindCSS.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Twig</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Symfony</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailwindCSS</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
+                                target="_blank">Voir les captures d'écrans</a>
+                            <a href="https://github.com/username/projet2"
+                                class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
+                                target="_blank">
+                                <i class="fab fa-github"></i> Voir lien GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/groupepi.png" alt="Projet 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Site Groupe PI</h3>
+                        <p class="text-gray-600 mb-4">Site vitrine complet pour le Groupe PI Install avec interface d'administration personnalisée. Ce projet Symfony utilisant Sulu CMS a nécessité la mise en place d'une architecture modulaire permettant aux administrateurs de gérer facilement le contenu sans connaissances techniques. J'ai créé des templates personnalisés, optimisé les performances de chargement et intégré une galerie de projets dynamique avec filtrage par catégories.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Symfony</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Sulu</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailWindCSS</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
+                                target="_blank">Captures d'écrans</a>
+                            <a href="#"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
+                                target="_blank">Lien vers le site web</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/projet4.jpg" alt="Projet 4" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Dashboard Analytics</h3>
+                        <p class="text-gray-600 mb-4">Tableau de bord d'analyse de données pour entreprises avec visualisations interactives et graphiques dynamiques. Cette application React utilise D3.js pour créer des représentations visuelles complexes et permet aux utilisateurs de filtrer les données, d'exporter des rapports et de configurer des alertes personnalisées. J'ai implémenté une architecture backend en Node.js qui optimise les requêtes et met en cache les données fréquemment consultées.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">D3.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Node.js</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
+                                target="_blank">Démo</a>
+                            <a href="#"
+                                class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
+                                target="_blank">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/projet5.jpg" alt="Projet 5" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">E-commerce Bio</h3>
+                        <p class="text-gray-600 mb-4">Boutique en ligne de produits bio avec système de panier et paiement sécurisé. Cette plateforme Symfony intègre une gestion complète des produits avec catégorisation, filtres avancés, et système de recommandation basé sur l'historique d'achat. J'ai mis en place une architecture évolutive avec Docker, optimisé les requêtes SQL pour améliorer les performances et implémenté une gestion des stocks en temps réel.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Symfony</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Docker</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
+                                target="_blank">Captures d'écran</a>
+                            <a href="#"
+                                class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
+                                target="_blank">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/projet6.jpg" alt="Projet 6" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Application Météo</h3>
+                        <p class="text-gray-600 mb-4">Application météo avec prévisions sur 7 jours, localisation automatique et alertes météorologiques personnalisables. Ce projet Vue.js intègre plusieurs APIs météorologiques pour des données précises et fiables, avec une interface utilisateur intuitive qui s'adapte parfaitement à tous les appareils. J'ai développé un système de cache intelligent qui réduit les appels API et optimisé les performances pour garantir un chargement rapide des données.</p>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">API REST</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">SCSS</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
+                                target="_blank">Application en ligne</a>
+                            <a href="#"
+                                class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
+                                target="_blank">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xl font-semibold mb-2">Anton Riviere - Portfolio</h2>
+                    <p class="text-gray-400">&copy; 2025 - Tous droits réservés</p>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a>
+                        </li>
+                        <li><a href="projets.html" class="text-gray-400 hover:text-white transition-colors">Projets</a>
+                        </li>
+                        <li><a href="competences.html" class="text-gray-400 hover:text-white transition-colors">Mes
+                                compétences</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Qui suis-je
+                                ?</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mentions légales</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Politique de
+                                confidentialité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">CGU</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Réseaux sociaux</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/username" class="text-gray-400 hover:text-white transition-colors"
+                            target="_blank">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/username"
+                            class="text-gray-400 hover:text-white transition-colors" target="_blank">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://twitter.com/username" class="text-gray-400 hover:text-white transition-colors"
+                            target="_blank">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
