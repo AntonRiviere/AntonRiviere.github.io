@@ -32,7 +32,6 @@
     <header class="fixed w-full bg-white shadow-sm z-50">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="images/logo_portfolio.png" alt="Logo" class="h-10 mr-3">
                 <h1 class="text-2xl font-semibold text-primary">Anton Riviere - Portfolio</h1>
             </div>
             <ul class="hidden md:flex space-x-8">
@@ -58,142 +57,132 @@
                 travaillé et les technologies que j'ai utilisées pour les réaliser.</p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projet 1 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
                         <img src="images/chess.png" alt="Projet 1" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">VueEchecs</h3>
-                        <p class="text-gray-600 mb-4">Un site permettant de jouer aux échecs en temps réel avec de nombreuses fonctionnalités avancées. Développé en Vue.js et TypeScript, ce projet inclut un moteur d'échecs complet, la validation des mouvements, la notation algébrique, la possibilité de rejouer des parties célèbres, et une interface utilisateur intuitive et responsive. J'ai mis l'accent sur les performances et l'accessibilité.</p>
+                        <p class="text-gray-600 mb-4">Un site permettant de jouer une partie d'échec avec de nombreuses fonctionnalités. Fait en VueJs et TypeScript.</p>
                         <div class="mb-4 flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Vue.js</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TypeScript</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailwindCss</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Tailwind CSS</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#"
-                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
-                                target="_blank">Voir les captures d'écran</a>
-                            <a href="https://github.com/username/projet1"
+                            <a href="chess.html"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors">Voir les détails</a>
+                            <a href="https://github.com/Papyquirush/VueEchec"
                                 class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
                                 target="_blank">
-                                <i class="fab fa-github"></i> Code source
+                                <i class="fab fa-github"></i>Lien GitHub
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projet 2 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
                         <img src="images/coaster.png" alt="Projet 2" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Frissons & Virages</h3>
-                        <p class="text-gray-600 mb-4">Un site communautaire dédié aux parcs d'attractions et aux montagnes russes avec une carte mondiale interactive. Ce projet Symfony implémente un système complet de gestion utilisateurs, des fiches détaillées pour chaque attraction, des avis et notations, ainsi qu'une API pour intégrer les données cartographiques. J'ai particulièrement travaillé sur l'optimisation des performances de la base de données et la mise en place d'une interface responsive avec TailwindCSS.</p>
+                        <p class="text-gray-600 mb-4">Un site sur les parcs d'attractions et les montagnes russes avec une carte mondiale.</p>
                         <div class="mb-4 flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Twig</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Symfony</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailwindCSS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Tailwind CSS</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#"
-                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
-                                target="_blank">Voir les captures d'écrans</a>
-                            <a href="https://github.com/username/projet2"
+                            <a href="coaster.html"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"">Voir les détails</a>
+                            <a href="https://github.com/Papyquirush/Frissons-Virages"
                                 class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
                                 target="_blank">
-                                <i class="fab fa-github"></i> Voir lien GitHub
+                                <i class="fab fa-github"></i>Lien GitHub
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projet 3 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
                         <img src="images/groupepi.png" alt="Projet 3" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Site Groupe PI</h3>
-                        <p class="text-gray-600 mb-4">Site vitrine complet pour le Groupe PI Install avec interface d'administration personnalisée. Ce projet Symfony utilisant Sulu CMS a nécessité la mise en place d'une architecture modulaire permettant aux administrateurs de gérer facilement le contenu sans connaissances techniques. J'ai créé des templates personnalisés, optimisé les performances de chargement et intégré une galerie de projets dynamique avec filtrage par catégories.</p>
+                        <p class="text-gray-600 mb-4">Site vitrine du Groupe PI Install - Un groupe de pose de chambres froides. Il s'agit du site qui présente l'entreprise
+                        c'est la nouvelle version de ce dernier.</p>
                         <div class="mb-4 flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Symfony</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Sulu</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailWindCSS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Tailwind CSS</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#"
-                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
-                                target="_blank">Voir les captures d'écrans</a>
-                            <a href="#"
+                            <a href="pi.html"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors">Voir les détails</a>
+                            <a href="https://www.groupepiinstall.com"
                                 class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
                                 target="_blank">Lien vers le site web</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projet 4 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
                         <img src="images/utp_log.png" alt="Projet 4" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Site de Questions Réponses Université</h3>
-                        <p class="text-gray-600 mb-4"></p>
+                        <p class="text-gray-600 mb-4">Il s'agit d'un site de question réponses pour l'université d'UTP en malaisie. Les étudiants en informatiques peuvent poser des questions auxquelles pourront par la suite répondre les professeurs de l'université.</p>
                         <div class="mb-4 flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">React</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TypeScript</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Figma</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#"
-                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
-                                target="_blank">Démo</a>
-                            <a href="#"
+                            <a href="utp.html"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors">Voir les détails</a>
+                            <a href="https://github.com/Raaaaphh/QuestionAnswer"
                                 class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
                                 target="_blank">
-                                <i class="fab fa-github"></i> Code source
+                                <i class="fab fa-github"></i>Lien GitHub
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projet 5 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/projet5.jpg" alt="Projet 5" class="w-full h-full object-cover">
+                        <img src="images/transchlor.png" alt="Projet 5" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">TransChlor</h3>
-                        <p class="text-gray-600 mb-4"></p>
+                        <p class="text-gray-600 mb-4">TransChlor est une application utilisée par les scientifiques européen afin de déterminer quand les structures en béton armée vont s'effondrer. Il s'agit de la version web de cette application.</p>
                         <div class="mb-4 flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Symfony</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">VisualBasic</span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">TailwindCSS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Tailwind CSS</span>
                         </div>
                         <div class="flex space-x-3">
                             <a href="#"
-                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
-                                target="_blank">Voir les captures d'écran</a>
-                            <a href="#"
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors">Voir les détails</a>
+                            <a href="https://github.com/AntonRiviere/TransChlorWeb"
                                 class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
                                 target="_blank">
-                                <i class="fab fa-github"></i> Code source
+                                <i class="fab fa-github"></i>Lien GitHub
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projet 6 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/projet6.jpg" alt="Projet 6" class="w-full h-full object-cover">
+                        <img src="images/aloas.png" alt="Projet 6" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2"></h3>
-                        <p class="text-gray-600 mb-4"></p>
+                        <h3 class="text-xl font-semibold mb-2">ALOAS - Gestion de tournois</h3>
+                        <p class="text-gray-600 mb-4">ALOAS est une application de gestion de tournois pour des personnes en situation de handicap. Il s'agit d'une application web dédiée à l'association à but non lucratif ALOAS</p>
                         <div class="mb-4 flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Vue.js</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">API REST</span>
@@ -201,12 +190,11 @@
                         </div>
                         <div class="flex space-x-3">
                             <a href="#"
-                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors"
-                                target="_blank">Application en ligne</a>
+                                class="px-4 py-2 bg-accent text-white text-sm rounded-md hover:bg-yellow-700 transition-colors">Voir les détails</a>
                             <a href="#"
                                 class="px-4 py-2 border border-gray-300 text-sm rounded-md flex items-center gap-2 hover:bg-gray-100 transition-colors"
                                 target="_blank">
-                                <i class="fab fa-github"></i> Code source
+                                <i class="fab fa-github"></i>Lien GitHub
                             </a>
                         </div>
                     </div>

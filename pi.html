@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Groupe PI - AntonR - Développeur Web</title>
+    <link rel="icon" href="images/logo_portfolio.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        primary: '#eb9d0e',
+                        secondary: '#a1700e',
+                        accent: '#eb9d0e'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins text-gray-800 bg-gray-50">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-semibold text-primary">Anton Riviere - Portfolio</h1>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-gray-600 hover:text-accent transition-colors">Accueil</a></li>
+                <li><a href="projets.html" class="text-accent font-medium transition-colors">Projets</a></li>
+                <li><a href="competences.html" class="text-gray-600 hover:text-accent transition-colors">Mes
+                        compétences</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-accent transition-colors">Qui je suis ?</a>
+                </li>
+            </ul>
+            <div class="md:hidden flex flex-col space-y-1 cursor-pointer" id="mobile-menu-button">
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-28 pb-16 md:pt-36 md:pb-20 container mx-auto px-6">
+        <div class="mb-6">
+            <a href="projets.html" class="flex items-center text-accent hover:text-secondary transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i> Retour aux projets
+            </a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-80 md:h-96 overflow-hidden">
+                <img src="images/groupepi2.png" alt="Site Groupe PI - Image principale"
+                    class="w-full h-full object-cover object-center">
+            </div>
+
+            <div class="p-6 md:p-8">
+                <h1 class="text-3xl font-bold mb-2">Site Groupe PI</h1>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Symfony</span>
+                    <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Sulu</span>
+                    <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Tailwind CSS</span>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-xl font-semibold mb-4">Contexte</h2>
+                    <p class="text-gray-700 mb-6">
+                        Le projet "Site Groupe PI" est une refonte complète du site vitrine pour l'entreprise Groupe PI
+                        Install, spécialisée dans la pose de chambres froides industrielles. L'objectif était de
+                        moderniser leur présence en ligne tout en offrant une meilleure visibilité de leurs services et
+                        réalisations. Le site précédent étant devenu obsolète techniquement et visuellement, cette
+                        nouvelle version devait renforcer l'image professionnelle de l'entreprise et faciliter le
+                        contact avec de potentiels clients. Elle a été réalisée avec Sulu un CMS symfony.
+                        Le code étant confidentiel je ne peux pas le partager. Toutes les pages codées ne sont pas actuellement disponibles en ligne.
+                    </p>
+
+                    <h2 class="text-xl font-semibold mb-4">Mon travail</h2>
+                    <p class="text-gray-700 mb-6">
+                        Pour ce projet professionnel, j'ai développé une solution complète basée sur Symfony et le CMS
+                        Sulu, permettant au client de gérer facilement son contenu. Le client devait pouvoir modifier les pages comme il le souhaitait. J'ai réalisé :
+                    </p>
+                    <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+                        <li>L'intégration du CMS Sulu pour permettre une gestion de contenu intuitive</li>
+                        <li>Une interface d'administration sur mesure adaptée aux besoins du client</li>
+                        <li>Un design moderne et professionnel utilisant Tailwind CSS</li>
+                        <li>Une galerie de projets avec filtres pour mettre en valeur les réalisations</li>
+                        <li>Un formulaire de contact avancé avec validation et protection anti-spam</li>
+                        <li>L'optimisation SEO pour améliorer la visibilité du site</li>
+                        <li>Une adaptation complète aux appareils mobiles et tablettes</li>
+                    </ul>
+
+                    <div class="flex space-x-4 mt-8">
+                        <a href="https://www.groupepiinstall.com" target="_blank"
+                            class="px-5 py-2 bg-accent text-white rounded-md hover:bg-secondary transition-colors flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Voir le site
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xl font-semibold mb-2">Anton Riviere - Portfolio</h2>
+                    <p class="text-gray-400">&copy; 2025 - Tous droits réservés</p>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a>
+                        </li>
+                        <li><a href="projets.html" class="text-gray-400 hover:text-white transition-colors">Projets</a>
+                        </li>
+                        <li><a href="competences.html" class="text-gray-400 hover:text-white transition-colors">Mes
+                                compétences</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Qui suis-je
+                                ?</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                            <a href="mailto:riviere.anton@gmail.com"
+                                class="text-gray-400 hover:text-white transition-colors">riviere.anton@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-gray-400"></i>
+                            <a href="tel:+33652300892" class="text-gray-400 hover:text-white transition-colors">06 52 30
+                                08 92</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

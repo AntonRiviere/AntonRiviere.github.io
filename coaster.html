@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail du Projet - AntonR - Développeur Web</title>
+    <link rel="icon" href="images/logo_portfolio.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    colors: {
+                        primary: '#eb9d0e',
+                        secondary: '#a1700e',
+                        accent: '#eb9d0e'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins text-gray-800 bg-gray-50">
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-semibold text-primary">Anton Riviere - Portfolio</h1>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-gray-600 hover:text-accent transition-colors">Accueil</a></li>
+                <li><a href="projets.html" class="text-accent font-medium transition-colors">Projets</a></li>
+                <li><a href="competences.html" class="text-gray-600 hover:text-accent transition-colors">Mes
+                        compétences</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-accent transition-colors">Qui je suis ?</a>
+                </li>
+            </ul>
+            <div class="md:hidden flex flex-col space-y-1 cursor-pointer" id="mobile-menu-button">
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+                <div class="w-6 h-0.5 bg-gray-600"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-28 pb-16 md:pt-36 md:pb-20 container mx-auto px-6">
+        <div class="mb-6">
+            <a href="projets.html" class="flex items-center text-accent hover:text-secondary transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i> Retour aux projets
+            </a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-80 md:h-96 overflow-hidden">
+                <img src="images/coaster.png" alt="VueEchecs - Image principale"
+                    class="w-full h-full object-cover object-center">
+            </div>
+
+            <div class="p-6 md:p-8">
+                <h1 class="text-3xl font-bold mb-2">Frissons & Virages</h1>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Symfony</span>
+                    <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Doctrine</span>
+                    <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Tailwind CSS</span>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-xl font-semibold mb-4">Contexte</h2>
+                    <p class="text-gray-700 mb-6">
+                        Le projet Frissons & Virages est une application web dédiée aux passionnés de montagnes russes (coasters) et de parcs.
+                        Elle a été développée dans le cadre de ma formation en développement web, avec pour objectif de
+                        créer une plateforme où les utilisateurs peuvent se renseigner sur les montagnes russes, voir les parcs à proximité grâce
+                        à la carte interractive ainsi que de voir le classement mondial des montagnes russes. Il se base sur une API
+                        publique qui fournit des données sur les montagnes russes et les parcs d'attractions.
+                    </p>
+
+                    <h2 class="text-xl font-semibold mb-4">Mon travail</h2>
+                    <p class="text-gray-700 mb-6">
+                        J'ai conçu le front-end du site et la partie classement mondial des montagnes russes. La possibilité d'ajouter des coasters en favoris. Ainsi que la plupart
+                        des pages du site. Le système de filtre de recherches également. Mon collègue à quand à lui gérer le back-end et la partie BD et API.
+                    </p>
+                    <h2 class="text-xl font-semibold mb-4">Les fonctionnalités</h2>
+                    <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+                        <li>Une interface simple et claire</li>
+                        <li>La possibilité d'ajouter des coasters et des parcs en favoris</li>
+                        <li>Un classement des meilleurs montagnes russes au monde.</li>
+                        <li>Une carte interactive avec les parcs et des clusters de montagnes russes </li>
+                        <li>Un système de recherche et de filtre.</li>
+                    </ul>
+
+                    <div class="flex space-x-4 mt-8">
+                        <a href="https://github.com/Papyquirush/Frissons-Virages" target="_blank"
+                            class="px-5 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors flex items-center">
+                            <i class="fab fa-github mr-2"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h2 class="text-xl font-semibold mb-2">Anton Riviere - Portfolio</h2>
+                    <p class="text-gray-400">&copy; 2025 - Tous droits réservés</p>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Accueil</a>
+                        </li>
+                        <li><a href="projets.html" class="text-gray-400 hover:text-white transition-colors">Projets</a>
+                        </li>
+                        <li><a href="competences.html" class="text-gray-400 hover:text-white transition-colors">Mes
+                                compétences</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Qui suis-je
+                                ?</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-1">
+                    <h3 class="text-md font-semibold mb-3 text-gray-300">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                            <a href="mailto:riviere.anton@gmail.com"
+                                class="text-gray-400 hover:text-white transition-colors">riviere.anton@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-gray-400"></i>
+                            <a href="tel:+33652300892" class="text-gray-400 hover:text-white transition-colors">06 52 30
+                                08 92</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
